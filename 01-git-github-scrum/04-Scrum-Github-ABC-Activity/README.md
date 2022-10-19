@@ -22,7 +22,7 @@
 
 - Copy the necessary files and folders to your project (index.html, README.md), then read the entire README before moving on. 
 
-![image](./photos/branch-security.png)
+![image](./branch-security.png)
 
 - Have a scrum meeting!
 
