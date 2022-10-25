@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beyonce's Fan Page</title>
+  </head>
+  <body>
+    <!-- The title of my page, and links to beyonces website -->
+    <header>
+      <h1>Beyonce's Fan Page</h1>
+      <nav>
+        <a href="https://www.beyonce.com/" target="_blank">Beyonce's Website</a>
+      </nav>
+    </header>
+
+    <!-- Bio, Lists, images, video, table, form -->
+    <main>
+      <!-- Bio -->
+      <section>
+        <h2>Where I first heard Beyonce</h2>
+        <p>I first heard Beyonce on the radio</p>
+        <h2>Biography</h2>
+        <p>
+          Beyoncé, in full Beyoncé Giselle Knowles, (born September 4, 1981,
+          Houston, Texas, U.S.), American singer-songwriter and actress who
+          achieved fame in the late 1990s as the lead singer of the R&B group
+          Destiny’s Child and then launched a hugely successful solo career.
+        </p>
+      </section>
+
+      <!-- ordered list -->
+      <section>
+        <h2>Top Hits</h2>
+        <ol>
+          <li>Crazy In Love</li>
+          <li>Single Ladies</li>
+          <li>Dangerously In Love</li>
+          <li>Run the World</li>
+          <li>Halo</li>
+        </ol>
+      </section>
+
+      <!-- unordered list -->
+      <section>
+        <h2>Albums</h2>
+        <ul>
+          <li>
+            <figure>
+              <figcaption>B-Day</figcaption>
+              <img
+                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.RYxmkZeh7j7RdtA9j8i0qAHaHa%26pid%3DApi&f=1&ipt=4bf981b619f1058097896c56793f8840a28a96f4a88a51fa31f71c9e02de2050&ipo=images"
+                alt="B-day album"
+              />
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <figcaption>Homecoming</figcaption>
+              <img
+                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.v82Jo905EKbyr1P0wmyHzQHaHZ%26pid%3DApi&f=1&ipt=b45bca8a931b0b2647ad1b31763504c1b45d7e7c5eb55e94e239f9796899676e&ipo=images"
+                alt="homecoming album"
+              />
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <figcaption>I am... Sasha Fierce</figcaption>
+              <img
+                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.hfrMY1_QbLoFULZACU7AGAHaHV%26pid%3DApi&f=1&ipt=d3df78650789b71bab5032880bdb27a9c104543cb44d8042a881b62bf1d2b938&ipo=images"
+                alt="I am... Sasha Fierce album"
+              />
+            </figure>
+          </li>
+        </ul>
+      </section>
+
+      <!-- video of a beyonce song -->
+      <section>
+        <h2>Video of</h2>
+        <!-- embed video here -->
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/ViwtNLUqkMY"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </section>
+
+      <!-- Table of upcoming concerts -->
+      <section>
+        <table>
+          <thead>
+            <tr>
+              <!-- names of columns -->
+              <th>Date</th>
+              <th>Time</th>
+              <th>Location</th>
+              <th>Tickets</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- all of our data will go here -->
+            <!-- each tr is a group of data -->
+            <tr>
+              <td>10/25/2022</td>
+              <td>8PM EST</td>
+              <td>Miami, FL</td>
+              <td><a href="https://www.ticketmaster.com/">Tickets</a></td>
+            </tr>
+            <tr>
+              <td>11/25/2022</td>
+              <td>8PM EST</td>
+              <td>New York, NY</td>
+              <td><a href="https://www.ticketmaster.com/">Tickets</a></td>
+            </tr>
+            <tr>
+              <td>12/25/2022</td>
+              <td>8PM EST</td>
+              <td>Boston, MA</td>
+              <td><a href="https://www.ticketmaster.com/">Tickets</a></td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>Enjoy your concert!</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+
+      <!-- beyonce survey form -->
+      <section>
+        <h2>Beyonce Survey</h2>
+        <form id="beyonceForm">
+          <label for="fav-song">What is your favorite song?</label>
+          <input type="text" id="fav-song" name="fav-song" />
+
+          <label for="concert-num">How many concerts have you been to?</label>
+          <input type="number" name="concert-num" id="concert-num" />
+
+          <!-- A -->
+          <label for="fav-album">Choose your favorite album:</label>
+          <!-- B -->
+          <input list="albums" name="fav-album" id="fav-album" />
+          <!-- C -->
+          <datalist id="albums">
+            <option value="B-Day"></option>
+            <option value="Homecoming"></option>
+            <option value="I am... Sasha Fierce"></option>
+          </datalist>
+
+          <p>Have you seen Beyonce live before?</p>
+            <input type="radio" id="yes" name="seen-live" value="yes" />  
+          <label for="yes">Yes</label><br />
+
+            <input type="radio" id="no" name="seen-live" value="no" />  
+          <label for="no">No</label><br />
+
+          <input type="submit" value="Submit">
+        </form>
+      </section>
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+    </main>
+
+    <!-- contact, and a thank you -->
+    <footer>
+        <h3>GOODBYE!</h3>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
