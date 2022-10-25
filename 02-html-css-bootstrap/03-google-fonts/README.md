@@ -12,3 +12,4 @@ Make sure to create a new branch in this repo for each activity you do inside of
     - Use the `<link>` method for one of the fonts in your html file and the `@import` method for the other font in your css file.
     - make sure you also set the `font-family` property for each element to the font that you have chosen.
     - once you are all done, make sure to add and commit your changes before moving back to the main branch.
+    
